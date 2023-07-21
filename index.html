@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <title>Analog Clock</title>
+</head>
+<body>
+    <div id="container">
+        <div id="hour"></div>
+        <div id="minute"></div>
+        <div id="second"></div>
+    </div>
+    <section id="greeting">
+    <div class="morning"></div>
+    <div class="afternoon"></div>
+    <div class="evening"></div>
+    <div class="night"></div>
+    </section>
+</body>
+<script type="text/javascript">
+    var currentTime = new Date().getHours();
+    if (document.body) {
+        if (5 <= currentTime && currentTime < 16) {
+            document.body.className = "morning";
+        }
+        else if (13 <= currentTime && currentTime < 16){
+            document.body.classname = "afternoon";
+        }
+        else if (16 <=currentTime && currentTime < 20) {
+            document.body.className = "evening";
+        }
+        else{
+            document.body.className = "night";
+        }
+    }
+    </script>
+    <script src="index.js"></script>
+
+</html>

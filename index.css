@@ -1,0 +1,60 @@
+#container {
+    position: relative;
+    margin: auto;
+    width: 50vw;
+    height: 50vw ;
+    background-image: url(./ClockImage//clock_glass.png);
+    background-size: 100%;
+    z-index: 1;
+    background-repeat: no-repeat;
+
+}
+
+#hour, #minute, #second {
+    position: absolute;
+    background: black;
+    border-radius: 20px;
+    transform-origin: bottom;
+}
+
+#hour {
+    width: 2.4%;
+    height: 18%;
+    top: 26.4%;
+    left: 48.8%;
+}
+
+#minute {
+    width: 1.6%;
+    height: 22%;
+    top: 22%;
+    left: 49.16%;
+}
+
+#second {
+    width: 1%;
+    height: 23%;
+    top: 19.5%;
+    left: 49.45%;
+}
+
+.morning {
+   background-image: url(/ClockImage/morning1.jpg);
+   background-size: cover;
+   background-repeat: no-repeat;
+   min-height: 100%;
+}
+
+.evening {
+    background-image: url(/ClockImage/Evening.jpg);
+    min-height: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    
+}
+
+.night {
+    background-image: url(/ClockImage/Night.jpg);
+    min-height: 100%;
+    min-width: 1024px;
+}
